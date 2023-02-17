@@ -1,5 +1,5 @@
 #________________----
-#PACKAGES ----
+#PACKAGES ----📦
 library(tidyverse)
 library(GGally)
 library(emmeans)
@@ -7,7 +7,7 @@ library(performance)
 library(broom.helpers)
 
 #__________________----
-#VISUALISATION----
+#SET UP----
 lsmodel0 <- lm(formula = height ~ 1, data = darwin)
 summary(lsmodel0)
 
@@ -20,6 +20,8 @@ broom::tidy(lsmodel1)
 
 summary(lsmodel1)
 
+#________________----
+#VISUALISATION---- 👀
 #plot of model ---- 
 darwin %>% 
   ggplot(aes(x=type, 
