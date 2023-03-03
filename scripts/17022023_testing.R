@@ -1,3 +1,11 @@
+#___________----
+#PACKAGES ----
+library(tidyverse)
+library(here)
+library(janitor)
+library(lubridate)
+library(kableExtra)
+library(dplyr)
 #______________----
 #VISUALISATION👀  ---- 
 #student t-test ---- 
@@ -103,3 +111,18 @@ y %>%
   theme_minimal()
 # not as inconsistent as we realised and the experiments have an identical level of uncertainty
 
+#__________________----
+#POWER ANALYSIS ----
+#data wrangling to summarise the means, standard deviations and sample size of each cross
+summary_darwin <- darwin %>%
+  summary(means = mean(height),
+          sd = sd(height),
+          n = n())
+summary_darwin
+
+#mean difference and pooled standard deviation
+summary_darwin %>% 
+  mutate(variance = sd^2) %>% 
+  mutate(per_sample_var = variance * (n-1)) %>% 
+  summarise(sd_pooled = sqrt(sum(per_sample_var)/sum(n-2)),
+            mean_diff = diff(mean))
