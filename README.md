@@ -14,3 +14,11 @@
 * Visual plots were made to test linear model assumption, equal variance, normal distribution, and outliers, and a visual t-test was also plotted to start looking into this for form of distribution to compare the self and cross maize plants.
 
 **Packages tidyverse, GGally, emmeans, performance, broom.helpers were used.
+
+## Lesson 3- Testing
+
+* Darwin's maize date was used to perform a student's t-test and paired t-test.
+
+* Importance of effect size was looked and type 1 and type 2 errors were also explored and how they can affect repeatability of results.
+
+** Packages tidyverse, janitor, here, dplyr, lubridate, kableExtra were used.
