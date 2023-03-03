@@ -21,4 +21,4 @@
 
 * Importance of effect size was looked and type 1 and type 2 errors were also explored and how they can affect repeatability of results.
 
-** Packages tidyverse, janitor, here, dplyr, lubridate, kableExtra were used.
+**Packages tidyverse, janitor, here, dplyr, lubridate, kableExtra were used.
