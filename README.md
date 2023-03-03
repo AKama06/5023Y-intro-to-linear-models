@@ -13,7 +13,7 @@ _Packages tidyverse, here, janitor, lubridate, kableExtra were used._
 
 * Visual plots were made to test linear model assumption, equal variance, normal distribution, and outliers, and a visual t-test was also plotted to start looking into this for form of distribution to compare the self and cross maize plants.
 
-**Packages tidyverse, GGally, emmeans, performance, broom.helpers were used.
+_Packages tidyverse, GGally, emmeans, performance, broom.helpers were used._
 
 ## Lesson 3- Testing
 
